@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+} 
+
+.header-section{
+    background-color: black;
+    color: white;
+    font-family: 'Tahoma', sans-serif;
+    padding: 25px 220px 5px 220px;
+}
+
+.header-section > .heading{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.header-section > .sub-heading{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar > a{
+    text-decoration: none;
+    color: white;
+    padding-left: 15vw;
+}
+@media (max-width: 480px) {
+    .header-section {
+        font-size: 3.2rem;
+    }
+    .nav-bar{
+        font-size: 3.2rem;
+    }
+}

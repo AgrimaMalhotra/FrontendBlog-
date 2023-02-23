@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="box"
+  >
+    <div
+      class="box-image"
+    >
+      <img
+        alt="abstract.png"
+        src="abstract.png"
+      />
+    </div>
+    <div
+      class="box-content"
+    >
+      <div
+        class="date-duration"
+      >
+        <p>
+          2nd Januray, 2018
+        </p>
+        <p>
+          2 mins 
+        </p>
+      </div>
+      <div
+        class="article-title"
+      >
+        <p>
+          The future of abstract art and the culture ...
+        </p>
+      </div>
+      <div
+        class="article-description"
+      >
+        <p />
+      </div>
+      <hr />
+      <div
+        class="like-bar"
+      >
+        <div
+          class="applause"
+        >
+          <img
+            alt="Clap"
+            src="clapping.svg"
+          />
+          <p>
+            10
+          </p>
+        </div>
+        <div
+          class="heart"
+        >
+          <img
+            alt="black heart"
+            src="heart-black.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
