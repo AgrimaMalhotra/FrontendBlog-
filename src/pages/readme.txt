@@ -5,19 +5,23 @@ home path / -> first thing when load localhost:3000
 error-> path {*} -> redirect -> if try anything and page not there like /abc go to this
 
 2 not founds:
-1. wrong page request -404 -> pagenotfound -> user error
-2. frontend accesses backend thing not found -> application not found -> seperate error page /error
-order of routes doent matter
+1. wrong page request -404 -> pageNotFound -> user error
+2. frontend accesses backend thing not found 
+-> application not found -> separate error page /error
+order of routes doesn't matter
 
-add try catch to makeRequest -> redirection -> useNavigate hook -> 
-only do when react in scope -> imported -> cant call in util pass as prop
+add try catch to makeRequest -> redirection 
+-> useNavigate hook -> 
+only do when react in scope -> imported 
+-> cant call in util pass as prop
 
 navigate?
 backend -> throw boom.bad 
 
-Showing error directly:
+Not showing error directly:
 - user friendly
 - share info to be used by potential attacker
+
  add path param for error code 
  query param: ?name=
 
@@ -27,7 +31,7 @@ Showing error directly:
 
  useParams() ->
 if not get error code from backend -> might not get error code
--> so conditional errorcode
+-> so conditional errorCode
 
 /error -> something went wrong
 /error/1 -> error code too -> so make errorcode param with ? > show error code also

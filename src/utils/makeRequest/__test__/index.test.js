@@ -2,7 +2,7 @@ import makeRequest from '..';
 import { GET_BLOG_DATA, BACKEND_URL } from '../../../constants/apiEndPoints';
 import mockBlogPostData from '../../../mocks/blogPosts';
 /*
-no try catch -. test for happy case
+no try catch -> test for happy case
 1. without request body
 2. with request body
 async await because fn itself async
@@ -14,12 +14,12 @@ here just doing axios and not axios.get /
 2.data destructuring and data being returned
 
 check if axios called 
-toHaveBeenCalledTimes -> use bcz api maay be called 2x if useEffect not placed properly
+toHaveBeenCalledTimes -> use bcz api may be called 2x if useEffect not placed properly
 
 also check if argument proper -> toHaveBeenCalledWith
 1st see if called -> what actually called with
 BACKEND_URL -> CONSTANT
-others-> be as specific as possible -> if use spread opreator-> will have to check if correct or not then
+others-> be as specific as possible -> if use spread operator-> will have to check if correct or not then
 
 before makeRequest -> make sure not called .not.toBeCalled()
 -----

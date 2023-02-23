@@ -8,8 +8,8 @@ import { UPDATE_BLOG_DATA } from '../../constants/apiEndPoints';
 import makeRequest from '../../utils/makeRequest';
 import { getFormattedDateFromUtcDate } from '../../utils/common';
 
-const Box = ({ Data }) => {
-  const [isLiked, setisLiked] = React.useState(Data.liked);
+function Box({ Data }) {
+  const [isLiked, setIsLiked] = React.useState(Data.liked);
   const [clapCount, setClapCount] = React.useState(Data.claps);
 
   const handleLike = async () => {
@@ -17,7 +17,7 @@ const Box = ({ Data }) => {
       await makeRequest(UPDATE_BLOG_DATA(Data.id), {
         data: { liked: !isLiked },
       });
-      setisLiked(!isLiked);
+      setIsLiked(!isLiked);
     } catch (e) {
       return (
         <div className="backendError">
@@ -44,7 +44,7 @@ const Box = ({ Data }) => {
   };
 
   return (
-    <div className="box" data-testid="blog-post" >
+    <div className="box" data-testid="blog-post">
       <div className="box-image">
         <img src={Data.image} alt="Blog Post Img" />
       </div>
@@ -65,7 +65,12 @@ const Box = ({ Data }) => {
           <hr />
           <div className="reaction">
             <div className="applause">
-              <img src={reaction} alt="Clap" onClick={handleClap} onKeyDown={handleClap} />
+              <img
+                src={reaction}
+                alt="Clap"
+                onClick={handleClap}
+                onKeyDown={handleClap}
+              />
               <p>{clapCount}</p>
             </div>
             <div className="liked" onClick={handleLike} onKeyDown={handleLike}>
@@ -76,7 +81,7 @@ const Box = ({ Data }) => {
       </div>
     </div>
   );
-};
+}
 
 Box.propTypes = {
   Data: propTypes.shape({

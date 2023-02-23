@@ -1,12 +1,12 @@
 import './Footer.css';
 import * as React from 'react';
 
-const Footer = () => {
+function Footer() {
   return (
-    <div className="footer">
+    <footer className="basic-padding">
       <p>&copy;artifact.com 2019</p>
-    </div>
+    </footer>
   );
-};
+}
 
 export default Footer;

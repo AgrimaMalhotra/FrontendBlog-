@@ -1,8 +1,9 @@
 import * as React from 'react';
 import './Header.css';
-const Header = () => {
+
+function Header() {
   return (
-    <div className="header-section">
+    <div className="header-section basic-padding">
       <p className="heading">The Artifact</p>
       <p className="sub-heading">Culture & Art blog</p>
       <nav className="nav-bar">
@@ -12,6 +13,6 @@ const Header = () => {
       </nav>
     </div>
   );
-};
+}
 
 export default Header;

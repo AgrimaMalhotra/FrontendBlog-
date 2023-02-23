@@ -1,6 +1,7 @@
-.box-wrapper{
+.box-wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     margin: 0 180px 50px 180px;
+
 }
